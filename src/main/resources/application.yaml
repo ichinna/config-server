@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ichinna/email_daemon
+          default-label: master
+          repos:
+            netsuiteerpv2:
+              pattern: netsuiteerpv2
+              uri: https://github.com/ichinna/periodic-netsuiteerpv2
+              default-label: master
+            spac4ccrm:
+              pattern: sapc4ccrm
+              uri: https://github.com/ichinna/periodic-sapc4ccrm
+              default-label: master
+      allow-override: false
